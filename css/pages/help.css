@@ -1,0 +1,474 @@
+#helpApp{
+  display:flex;
+  max-width:1060px;
+  flex-wrap:wrap;
+  gap:25px;
+  justify-content: center
+
+
+}
+#helpApp #helpBth{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  gap:27px;
+  margin-bottom:72px;
+}
+#helpBth input{    
+  position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+#helpApp #helpBth label{
+  width: 200px;
+  height: 200px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  display:flex;
+  flex-direction:column;
+  
+}
+#helpApp #helpBth label:hover,
+#helpApp #helpBth input:checked+label
+{
+  background: rgba(52, 169, 187, 0.22);
+}
+#helpApp #helpBth label img{
+  width:88px;
+  height:88px;
+  margin:28px 56px 0 56px;
+}
+#helpApp #helpBth label h3{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #000000;
+}
+#money .pageDonate{
+  max-width: 880px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding:58px 70px;
+	width:100vw;
+}
+#money .pageDonate .str{
+  display:flex;
+  flex-wrap:wrap;
+  gap:42px;
+  margin-bottom:58px;
+}
+#money .pageDonate .str img{
+  width:121px;
+  height:114px;
+}
+#money .pageDonate .str h4{
+  max-width:575px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgba(53, 90, 96, 0.6);
+}
+#money .pageDonate .leyka-pf{
+  margin:0;
+  max-width:739px;
+  -webkit-box-shadow:none;
+  box-shadow: none;
+  padding:0
+}
+#money .pageDonate .leyka-pf .leyka-pm-form{
+  display:flex;
+  flex-direction:column;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section {
+  display:flex;
+  margin-bottom:30px;
+	flex-wrap:wrap;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.hidden {
+  display:none;
+  margin-bottom:0;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .periodicity{
+  display:flex;
+  width:100% !important;
+  gap:12px
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .periodicity a
+{
+    border: none;
+    cursor: pointer;
+    background: rgba(52, 169, 187, 0.3);
+    border-radius: 10px;
+    padding: 9px 20px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    user-select: none;
+    text-transform:none;
+    width: 50%;
+    height: 43px;
+}
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section .periodicity a[aria-selected="true"]{
+  background: rgba(48, 155, 172, 0.6);
+}
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section-title-container{
+      width:340px;
+      justify-content: flex-start;
+      align-items: center;
+    margin:0;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--amount{
+   justify-content: space-between;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section-title-container .section-title-text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+  text-transform:none;
+  text-align:center;
+  padding:0;
+  margin:0;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section-title-container .section-title-line {display:none}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields{
+  width:392px;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount{
+  width:392px;
+  display:flex;
+  justify-content: space-between;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure,
+
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure {
+    overflow: none !important;
+    display: flex;
+}
+.leyka-tpl-star-form .section .section__fields .star-swiper.no-swipe, .leyka-screen-form .section .section__fields .star-swiper.no-swipe {
+    height: auto;
+    border: none;
+}
+@media screen and (min-width: 640px){
+.leyka-tpl-star-form .section .section__fields .star-swiper, .leyka-screen-form .section .section__fields .star-swiper {
+    border-radius: 4px;
+    border: 2px solid var(--leyka-color-gray-superlight);
+    height: 56px;
+    border: none;
+}
+}
+.leyka-tpl-star-form .section .section__fields .amount__figure.star-swiper{
+  overflow:visible !important;
+  display:flex;
+  height:auto !important;
+  min-height:140px;
+  align-items: flex-start
+    
+}
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list{
+  display:flex;
+  gap:9px;
+  height:auto;
+}
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item{
+  width: 90px;
+  height: 40px;
+  background: rgba(52, 169, 187, 0.22);
+  border-radius: 5px;
+  margin-left:0;
+  margin-bottom:0;
+  margin:right;
+  margin:left;
+  padding:0;
+  max-width:90px
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.selected{
+  background: rgba(52, 169, 187, 0.8);
+  border:0
+}
+@media screen and (min-width: 640px){
+  #money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.flex-amount-item{
+    min-width:190px;
+    padding:4px 9px;
+  }
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.flex-amount-item span.textfield-label{
+  font-size:12px;
+  line-height: 16px
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.flex-amount-item{
+  display:flex;
+  
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.flex-amount-item input,
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.flex-amount-item label{
+  width:100%; 
+  margin:10px !important
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item .swiper-item-inner{
+  margin-top:2px;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item .swiper-item-inner span{
+  font-family: 'Jost', sans-serif;
+	font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person{
+  width:100%;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section-title-container{
+  display:none
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__textfield .leyka-star-field-frame{
+  background: rgba(52, 169, 187, 0.22);
+  border-radius: 5px;
+  padding:0;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__textfield .leyka-star-field-frame label,
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__textfield .leyka-star-field-frame input{
+  padding:8px 26px !important;
+  min-width:220px;
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__textfield .leyka-star-field-frame label span{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: rgba(53, 90, 96, 0.6);
+  text-align:center
+}
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__oferta,
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__submit{
+  width:100%;
+}
+
+#money .pageDonate .leyka-pf .leyka-pm-form .section.section--person .section__fields.donor .donor__textfield .leyka-star-field-frame {
+    background: rgba(52, 169, 187, 0.22);
+    border-radius: 5px;
+    padding: 0;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__textfield.invalid .leyka-star-field-frame, .leyka-screen-form .section .section__fields.donor .donor__textfield.invalid .leyka-star-field-frame {
+    background-image: url(../../img/star-icon-error.svg);
+    background-color: var(--leyka-color-white);
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__textfield.focus .leyka-star-field-frame {
+  border: 2px solid rgba(52, 169, 187, 0.8);
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta{
+  
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span{
+  padding-left:88px
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: justify;
+  color: #000000;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label a{
+  color:#309BAC;
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+text-align: justify;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label::before{
+  width:42px;
+  height:42px;
+     align-self: center;
+    justify-self: center;
+    background: rgba(52, 169, 187, 0.22);
+    border-radius: 10.5px;
+    color: rgba(52, 169, 187, 0.6);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-size: 40px 40px;
+  left:-88px
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span input:checked + label::before{
+  background: url(../../img/Group196.png);
+}
+
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label svg{
+  fill:rgba(52, 169, 187, 0.6);
+  display:none !important;
+  left:-80px;
+  width:20px;
+  height:20px;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label svg use{
+  width:40px;
+  height:40px;
+  background-size:40px 40px
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label:nth-child(2){
+  margin-bottom:30px
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label::after{
+  content:'Пожалуста, подтвердите согласие';
+  width:100%;
+  position:relative;
+  top:1px;
+  left:0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(53, 90, 96, 0.6);
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__oferta span label:nth-child(4)::after{
+	top:1px;
+	content:'\0aПожалуста, подтвердите согласие';
+	white-space: pre
+}
+#money .section .section__fields.donor .donor__submit{
+  display:flex;
+  justify-content: flex-end;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__submit input {
+  background: rgba(52, 169, 187, 0.8);
+  border-radius: 6.75px;
+  width: 216px;
+  height: 54px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.6px;
+  line-height: 31px;
+  text-transform:none;
+  color: #FFFFFF;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.leyka-tpl-star-form .section .section__fields.donor .single-pm-icon{display:none !important}
+
+
+#helpApp .row p.greenPoint{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+#helpApp .row#pageOther p.greenPoint{
+  margin:0 0 29px 68px;
+}
+#helpApp .row p.greenPoint::before{
+  position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-left: -68px;
+    background-color: rgba(52, 169, 187, 0.6);
+    border-radius: 50%;
+}
+#helpApp .row p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+#helpApp .row#pageOther ul{
+  margin-top:-29px;
+  padding:0 0 24px 68px;
+  list-style-type:none;
+}
+#helpApp .row#pageOther ul li{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+#helpApp .row#pageVolonter p.greenPoint{
+  margin:0 0 14px 68px;
+}
+#helpApp .row#pageVolonter p.greenPoint:nth-child(8){
+  margin: 0 0 34px 68px
+}
+#helpApp .row h4{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 30px;
+  color: #000000;
+  margin:18px 0 23px 0;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__textfield label span.donor__textfield-label{
+	font-family: 'Jost', sans-serif;
+}
+.leyka-tpl-star-form .section .section__fields.donor .donor__textfield input, .leyka-tpl-star-form .section .section__fields.donor .donor__textfield textarea, .leyka-screen-form .section .section__fields.donor .donor__textfield input, .leyka-screen-form .section .section__fields.donor .donor__textfield textarea{
+	font-family: 'Jost', sans-serif;
+}
+.leyka-tpl-star-form .section .section__fields .amount__figure.star-swiper .swiper-item.flex-amount-item input, .leyka-screen-form .section .section__fields .amount__figure.star-swiper .swiper-item.flex-amount-item input{
+	font-family: 'Jost', sans-serif;
+}
+.leyka-tpl-star-form .section .section__fields .star-swiper .full-list, .leyka-screen-form .section .section__fields .star-swiper .full-list{
+	width:100%;
+	margin-bottom: 0;
+    margin-left: -0px;
+}
+@media(max-width:408px){
+	#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list .swiper-item.flex-amount-item{
+		min-width: 95%;
+	}
+}
+@media screen and (max-width: 639px){
+	.leyka-tpl-star-form .section .section__fields .star-swiper .swiper-item.selected .swiper-item-inner, 
+	.leyka-screen-form .section .section__fields .star-swiper .swiper-item.selected .swiper-item-inner{
+		background: rgba(52, 169, 187, 0.8);
+   		border: 0;
+	}
+}
+@media(max-width:960px){
+	.leyka-tpl-star-form .section .section__fields.donor .donor__submit input{
+		width:100%;
+	}
+	#money .pageDonate .leyka-pf .leyka-pm-form .section .section-title-container{
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	margin: 0;
+    	text-align: center;
+    	width: 100%;
+	}
+	#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount{
+		width:100%;
+	}
+	#money .pageDonate .leyka-pf .leyka-pm-form .section .section__fields.amount .amount__figure .full-list{
+		justify-content: flex-start;
+	}
+	.leyka-tpl-star-form .section .section__fields .amount__figure.star-swiper{
+		min-height: auto;
+	}
+	#money .pageDonate .str{
+		justify-content: center;
+	}
+}

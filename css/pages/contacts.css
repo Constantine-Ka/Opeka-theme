@@ -1,0 +1,265 @@
+[v-cloak] {
+  display: none;
+}
+#app{
+	margin-top:0
+}
+.container{
+	max-width: 1060px;
+}
+.container.contact-check{
+  display:flex;
+  justify-content: center
+}
+.container.contact-check .row {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+.container.contact-check .row input{
+
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.container.contact-check .row label{
+  display:flex;
+  width: 270px;
+  height: 270px;
+  
+  flex-direction: column;
+  text-align:center
+}
+.container.contact-check .row label img{
+  margin:47px 75px 45px 75px;
+}
+.container.contact-check .row label p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin:0
+}
+.container.contact-check .row label p span{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+.container.contact-check .row input:checked + label{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.container.contact-page{
+  flex-direction:column;
+  margin-top:80px;
+  width:100%;
+}
+.container.contact-page .row.basic {
+  display:flex;
+  flex-direction: row;
+   width:100%;
+  gap:0;
+	justify-content:center;
+	flex-wrap:wrap
+}
+.container.contact-page#sosnovka .row.basic,
+.container.contact-page#inokovka .row.basic{
+	justify-content: space-between;
+}
+.container.contact-page .row.basic .timeToWorkBlock,
+.container.contact-page .row.basic .contactPage,
+.container.contact-page .row.basic .contactBlock
+{
+  display:flex;
+  background: #FFFFFF;
+box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  height:120px;
+  justify-content: center;
+	align-items: flex-end;
+}
+.container.contact-page .row.basic .timeToWorkBlock{
+  padding:31px 16px;
+  max-width:500px;
+  
+}
+.container.contact-page .row.basic .timeToWorkBlock .weekday,
+.container.contact-page .row.basic .timeToWorkBlock .holiday,
+.container.contact-page .row.basic .timeToWorkBlock .break{
+    justify-content: center;
+
+}
+.container.contact-page .row.basic .contactPage{
+   width:230px;
+  margin: 0 11px 0 30px;
+}
+.container.contact-page .row.basic .contactBlock{
+     width:290px;
+}
+
+.container.contact-page .row.basic .days{
+  border-bottom:1px solid rgba(52, 169, 187, 0.8);
+  text-align:center;
+  display:flex;
+  justify-content: space-evenly
+}
+.container.contact-page .row.basic .days span{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #DC1616;
+}
+.container.contact-page .row.basic .days span.bold{
+  font-weight: 700;
+
+}
+.container.contact-page .row.basic .time{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  margin-top:10px;
+  text-align:center;
+}
+.container.contact-page .row.basic .timeToWorkBlock .weekday .days span{
+  color:#000;
+}
+.container.contact-page .row.basic .timeToWorkBlock .weekday {
+  width:210px; 
+  margin-right:8px
+}
+.container.contact-page .row.basic .timeToWorkBlock .holiday{
+  width:88px;
+  margin:0 8px;
+}
+.container.contact-page .row.basic .timeToWorkBlock .break{
+  width:120px;
+  margin-left:8px
+}
+.container.contact-page .row.basic .contactPage{
+  position:relative;
+  padding:18px 0px 18px 90px
+}
+.container.contact-page .row.basic .contactPage p:after{
+  content:"";
+  position:absolute;
+  background:url(../../img/free-icon-phone-call-114333.png);
+  width:40px;
+  height:40px;
+  display:block;
+  left:16px;
+  top:38px;
+}
+.container.contact-page .row.basic .contactPage p{
+  margin:0 0 11px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.container.contact-page .row.basic .contactPage a{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #000000;
+  text-align:left;
+  width:100%;
+  text-decoration:none;
+}
+.container.contact-page .row.basic .contactBlock{
+  position:relative;
+  justify-content:start;
+}
+.container.contact-page .row.basic .contactBlock a{
+  margin-left:94px;
+  text-align:left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #34A9BB;
+  text-decoration:none
+}
+.container.contact-page .row.basic .contactBlock .vk{
+  margin-bottom:16px;
+  text-decoration:none
+}
+.container.contact-page .row.basic .contactBlock .vk::before{
+  content:'';
+  position:absolute;
+  background:url(../../img/free-icon-vk-2111828.png);
+  width:35px;
+  top:12px;
+  left:35px;
+  height:35px;
+}
+.container.contact-page .row.basic .contactBlock .email::before{
+  content:'E-mail:';
+  position:absolute;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  left:21px;
+  top:70px;
+} 
+.container.contact-page .row{
+	gap:5px;
+  width:100%
+}
+.container.contact-page .row h5{
+  margin: 49px auto 10px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+.container.contact-page .row img{
+	height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:1035px){
+	.container.contact-page .row.basic {
+		justify-content: center
+	}
+	.row.hospital.procure{
+		justify-content: center;
+	}
+}
+
+.container.contact-page#inokovka .row.basic .days span,
+.container.contact-page#sosnovka .row.basic .days span{
+  text-transform: none;
+  font-size: 18px;
+  line-height: 23px;
+  
+}
+.container.contact-page#inokovka .row.basic .timeToWorkBlock .break,
+.container.contact-page#sosnovka .row.basic .timeToWorkBlock .break{
+  width:205px
+}
+.container.contact-page#inokovka .row.basic .timeToWorkBlock,
+.container.contact-page#sosnovka .row.basic .timeToWorkBlock{
+  max-width:580px
+}
+.container.contact-page .row.basic .contactBlock .email{
+  display: flex;
+  flex-direction: column;
+}
+@media(max-width:1416px){
+	.container.contact-page .row.basic{
+		gap:20px;
+	}
+	.container.contact-page .row.basic .contactPage{
+		margin: 0 auto;
+	}
+}

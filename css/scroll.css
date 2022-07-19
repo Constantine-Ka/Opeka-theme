@@ -1,0 +1,44 @@
+*::-webkit-scrollbar {
+  width: 13px;
+	
+}
+*::-webkit-scrollbar-track{
+	width: 13px;
+background: rgba(0, 0, 0, 0.05);
+border-radius: 30px;
+}
+*::-webkit-scrollbar-thumb {
+	width: 7px;
+
+background: rgba(52, 169, 187, 0.6);
+border-radius: 20px;
+}
+
+.field.active::-webkit-scrollbar-track {
+	padding:2px;
+}
+a.scrollUp{
+	padding:12px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	text-decoration:none;
+	background:#34A9BB;
+	color:#fff;
+	width: 45px;
+	height: 45px;
+	box-shadow: 0px 4px 4px rgba(52, 169, 187, 0.25);
+	border-radius:50%;
+	opacity:1;
+	position:fixed;
+	right:5px;
+	bottom:5px;
+	z-index:100000
+}
+a.scrollUp i{
+	padding-top:2px;
+}
+a.scrollUp:hover{
+	opacity:0.6;
+}

@@ -1,0 +1,505 @@
+details summary::-webkit-details-marker, details summary::marker  {
+  display:none;
+}
+.row.hospital.flex-row{
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.row.hospital{
+    width:100%;
+    margin:3px;
+    display:flex;
+    flex-direction: column;
+	justify-content: center;
+}
+.row.hospital:nth-child(odd){
+	margin-top:0px;
+}
+.row.hospital:nth-child(3){
+	margin-top:32px;
+}
+.row.hospital .notion{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 85px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding:20px 27px;
+}
+.row.hospital .notion p{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+  color: #000000;
+  margin:0 0 4px 0;
+}
+.row.hospital .notion a{
+  padding:24px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #34A9BB;
+  text-decoration:underline;
+}
+
+.row.hospital .greenPoint{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding:0 0 0 91px;
+  margin:20px 0 0px 0px;
+}
+.row.hospital .greenPoint::before{
+  position: absolute;
+  content:'';
+  width:20px;
+  height:20px;
+  margin-left:-47px;
+  background-color:rgba(52, 169, 187, 0.6);
+  border-radius:50%;
+	top:auto;
+}
+.row.hospital h2.entry-title{
+  background: #FFFFFF;
+    box-shadow: 4px 4px 85px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    padding: 5px 21px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    align-items: start;
+    margin: 76px auto 0 0;
+    width: fit-content;
+}
+.row.hospital.procure{
+  	flex-direction:row;
+  	justify-content:center;
+	flex-wrap: wrap;
+}
+.row.hospital.procure .procuring {
+  max-width:160px;
+	height:101px;
+  text-align:center;
+  margin:10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  padding:10px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+	align-items: center;
+	display:flex;
+}
+.row.hospital.fillials{
+  flex-direction:row;
+  justify-content:space-between;
+	flex-wrap: wrap;
+	align-content:normal;
+	margin-top:58px;
+}
+.row.hospital.fillials .fillial{
+  max-width:520px;
+}
+.row.hospital.fillials .fillial .greenSquare{
+  background:rgba(52, 169, 187, 0.3);
+  padding:20px 45px; 
+  text-align:center;
+}
+.row.hospital.fillials .fillial .greenSquare details summary::-webkit-details-marker {
+    display: none
+}
+.row.hospital.fillials .fillial .greenSquare details summary{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.row.hospital.fillials .fillial .greenSquare .line{
+  max-width:385px;
+  height:3px;
+  background-color:#fff;
+  border-radius:3px;
+	margin:6px;
+}
+.row.hospital.fillials .fillial .greenSquare p.contact{
+  margin:0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.row.hospital.fillials .fillial .greenSquare p.contact a{
+  color: #26717C;
+  font-weight: 400;
+}
+.row.hospital.fillials .fillial .greenSquare .whiteBlock{
+  max-width:256px;
+  background-color:#FFF;
+  margin:20px auto;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 95px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  padding:12px 23px;
+}
+.row.hospital.fillials .fillial .greenSquare .whiteBlock p{
+  margin:0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.row.hospital.fillials .fillial .greenSquare p.timeWork{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+/*-------Блок о запрете посещения--------*/
+.row.hospital.fillials .fillial .icon{
+	/*display:flex;*/ /*---------Раскомментировать в случае закрытия*/
+	 display:none; /*---------Закомментировать в случае закрытия*/
+	justify-content: center;
+  margin:15px auto;
+  width:35px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  color: rgba(52, 169, 187, 0.6);
+  background: #FFFFFF;
+  border-radius:50%;
+  filter: drop-shadow(4px 4px 60px rgba(0, 0, 0, 0.25));
+
+}
+.row.hospital.fillials .fillial p.message{
+	/*display:flex;*/ /*---------Раскомментировать в случае закрытия*/
+	 display:none; /*---------Закомментировать в случае закрытия*/
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin:0 auto;
+  max-width: 396px;
+  color: #000000;
+  text-transform:uppercase; 
+}
+/*------Конец блока о запрете посещения--------*/
+.row.hospital .textblock{
+  max-width:580px;
+}
+.row.hospital .textblock p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: justify;
+	
+  color: #000000;
+}
+.row.hospital .textblock p.total{
+	margin-top:53px;
+	margin-bottom:13px;
+}
+.row.hospital .textblock p.little{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #000000;
+	margin-bottom:27px;
+}
+.row.hospital .textblock a{
+  background: rgba(52, 169, 187, 0.6);
+  border-radius: 5px;
+  padding:5px 48px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  text-decoration:none
+}
+.row.hospital .icon{
+  width:100%;
+  max-width:444px;
+  filter: drop-shadow(4px 4px 60px rgba(0, 0, 0, 0.25));
+  display:flex;
+}
+.row.hospital .icon .phone{
+  width:70px;
+  padding:10px 8px;
+  height:90px;
+  background-color: rgba(52, 169, 187, 0.6);
+border-radius: 7px;
+  margin:auto;
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+}
+.row.hospital .icon .phone .key{
+  background-color:#fff;
+  position:absolute;
+  border-radius:6px;
+  width: 12px;
+  height: 12px;
+}
+.row.hospital .icon .phone .key:nth-child(1){
+  width: 53.67px;
+  height: 12.83px;
+  border-radius:5px
+}
+.row.hospital .icon .phone .key:nth-child(2),
+.row.hospital .icon .phone .key:nth-child(3),
+.row.hospital .icon .phone .key:nth-child(4){
+   margin-top:20px;
+}
+.row.hospital .icon .phone .key:nth-child(5), 
+.row.hospital .icon .phone .key:nth-child(6), 
+.row.hospital .icon .phone .key:nth-child(7){
+  margin-top:38px;
+}
+.row.hospital .icon .phone .key:nth-child(8), 
+.row.hospital .icon .phone .key:nth-child(9){
+  margin-top:57px;
+}
+.row.hospital .icon .phone .key:nth-child(2),
+.row.hospital .icon .phone .key:nth-child(5){
+  margin-left:20px
+}
+.row.hospital .icon .phone .key:nth-child(3), .row.hospital .icon .phone .key:nth-child(6),
+.row.hospital .icon .phone .key:nth-child(9){
+  margin-left:41px
+}
+.row.hospital .icon .phone .key:nth-child(8){
+  width:33px
+}
+.row.hospital.uprsoc .greenBlock{
+  max-width:340px;
+  background-color:rgba(52, 169, 187, 0.22);
+  margin-right:20px;
+  padding:15px 20px 13px 20px;
+}
+.row.hospital.uprsoc .greenBlock h5{
+  margin:0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #000000;
+}
+.row.hospital.uprsoc .greenBlock p{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+  margin:0;
+}
+.row.hospital.uprsoc .greenBlock p.site{
+  margin:8px 0;
+}
+.row.hospital.uprsoc .textBlock{
+  background-color:#fff;
+  max-width:680px;
+  padding: 0 10px;
+}
+.row.hospital.uprsoc .textBlock p{
+  margin:0px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: justify;
+  color: #000000;
+}
+.row.hospital .icon .phone:hover {
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+  transform: scale(1.5);
+  transition:1s;
+}
+
+details > summary:first-of-type {
+    display: flex;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed;
+}
+#dotation{
+	margin-top:0;
+}
+.row.hospital.flex-row.uprsoc{
+	margin-top:38px;
+	gap:42px;
+} 
+#controlOrganization .procuring{
+  flex-direction: column;
+  max-width:340px;
+  padding:26px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+	height:auto;
+}
+#controlOrganization .procuring h4{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  margin:0
+}
+#controlOrganization .procuring p{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  margin:10px 0 0
+}
+#docsList{
+  flex-wrap: wrap;
+}
+#docsList .greenPoint{
+  margin:3px 0;
+  min-width:390px;
+  /* width:60%; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  
+}
+#docsList .greenPoint:nth-child(2n){
+  width:45%;
+  padding: 0 0 0 61px;
+}
+#docsList .greenPoint:nth-child(2n-1){
+  width:55%;
+}
+@media(max-width:876px){
+  #docsList .greenPoint, 
+  #docsList .greenPoint:nth-child(2n){
+    padding: 0 0 0 91px;
+    
+  }
+}
+
+#limited{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 85px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding:11px 19px;
+	margin-bottom: 136px;
+
+}
+#limited h4{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin:0 0 8px 0
+}
+#limited ul{
+  margin:0;
+}
+#limited ul li{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+#controlTitle{
+  margin-top:76px;
+  margin-bottom:38px;
+}
+.row.hospital.procure#controlOrganization{
+  justify-content: space-between;
+  margin-bottom:136px;
+	gap:25px;
+}
+#controlOrganization .procuring{
+  margin:0;
+}
+.row.hospital.mto .str{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:27px;
+}
+.row.hospital.mto .str a.btn-green{
+  margin: 52px 0 0px 0px;
+  padding:5px 17px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color:rgba(52, 169, 187, 0.8);
+  text-decoration:none;
+  border-radius:7px
+}
+
+
+.row.hospital.mto .str1 {    
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top:0
+}
+.row.hospital.mto .str1 a.location{
+  background:url('../../img/green-location.png');
+  min-width:33px;
+  height:31px;
+	cursor:default;
+}
+.row.hospital.mto .str1 p{
+  margin:auto auto auto 38px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.row.hospital.mto img{
+  filter: drop-shadow(4px 4px 35px rgba(0, 0, 0, 0.6));
+}
+.row.hospital.mto .str{
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.row.hospital.mto .str a.btn-green {
+    margin: auto 0 auto 0px;
+    padding: 4px 16px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: rgba(52, 169, 187, 0.8);
+    text-decoration: none;
+    border-radius: 7px;
+    z-index:10000;
+}
+
+.row.hospital.mto .str p.whiteSquare{
+  background: #FFFFFF;
+  box-shadow: 4px 4px 95px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  padding:12px 22px;
+  margin-top:18px;
+    margin-bottom:0;
+
+  z-index:10000;
+  text-align:center;
+}
+.row.hospital{
+  z-index:1000;
+}
+.row.hospital.mto{
+  margin-top:30px
+}
+
+.row.hospital#priceTitle{
+  margin-top:78px
+}
+

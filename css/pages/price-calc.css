@@ -1,0 +1,342 @@
+/*----Установка шрифта----*/
+h1, h2, h3, h4, h5, h6,label, p, span, a{
+	font-family: 'Jost', sans-serif !important;
+	font-style: normal !important;
+	font-weight: 400 ;
+	color: #000000;
+}
+.container {
+  max-width: 1140px;
+  margin:0 auto;
+}
+/*----Заголовок и описание-----*/
+.container  h1{
+	font-size: 40px;
+	line-height: 58px;
+	margin: 56px auto 0 0px;
+}
+.container  p.price-description{
+	max-width: 542px;
+  	    font-weight: 500;
+	
+	font-size: 16px;
+	line-height: 23px;
+	margin: 0 0 0 0;
+}
+.container  p.checktariffs{
+  margin-top:53px;
+  margin-bottom:10px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+}
+/*----Главный блок----*/
+.container .price-block{
+	margin-top: 10px;
+	position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.price-column{
+	top:0;
+}
+.price-column .sticky{
+	position:sticky;
+	top:0;
+}
+/*----Блок рассчета стоимости----*/
+.container .price-block .result-service{
+  grid-template-areas: 'result-service';
+  max-width: 340px;
+	background-1color:rgba(52, 169, 187, 0.12);
+	background-color:rgb(230, 245, 248);
+	height: 100%;
+	padding: 18px 26px;
+	position: relative;
+	top:0;
+	margin-bottom:22px;
+}
+.container .price-block .result-service a{
+	text-decoration:none;
+	color:#34A9BB;
+}
+.container .price-block .result-service h4{
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-top:0;
+	margin-bottom:15px;
+
+}
+.container .price-block .result-service p.description{
+	font-size: 15px;
+	line-height: 22px;
+	text-align: justify;
+	margin-bottom: 32px;
+	margin-top:38px;
+
+}
+.container .price-block .result-service p.result-length,
+.container .price-block .result-service p.result-money{
+	margin: 7px 0;
+	font-size: 17px;
+	line-height: 25px;
+}
+.container .price-block .result-service .btnblock{
+	display: flex;
+	margin: 31px 0 7px auto;
+	height: 43px;
+	justify-content: flex-end;
+
+}
+.container .price-block .result-service .btnblock .btn{
+	background: rgba(48, 155, 172, 0.6);
+	border-radius: 10px; 
+	/* width: 124px; */
+	height: 44px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 22px;
+	padding: 9px 17px;
+	text-align: center;
+	color:#fff;
+	text-shadow:none;
+}
+.container .price-block .result-service .btnblock .btn:hover{
+	background: rgba(52, 169, 187, 0.3)
+}
+
+
+
+
+
+/*---Прайс услуг--*/
+.container .price-block #priceCalc {
+  width:700px;
+}
+.container .price-block #priceCalc .unit-service{
+	position: relative;
+	max-width: 800px;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 85px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	padding: 26px 20px;
+	margin: 40px 0 40px 0;
+	z-index: 3;
+	
+}
+.container .price-block #priceCalc .unit-service:first-child{
+  margin:0 0 40px 0
+}
+
+#cookie_notification{
+	z-index: 100000;
+}
+.container .price-block #priceCalc .unit-service:nth-child(8){
+	margin: 0px 0 40px 0;
+	z-index: 2;
+}
+.container .price-block #priceCalc img{
+	position: absolute;
+	display: none;
+}
+.container .price-block #priceCalc img:nth-child(odd){
+	right: -34px;
+}
+.container .price-block #priceCalc img:nth-child(even){
+	left: -105px;
+	width: 220.69px;
+	height: 181.75px;
+}
+.container .price-block #priceCalc img:nth-child(1){
+	transform: rotate(-26.16deg);
+	right: 0px;
+	top:-121px;	
+}
+.container .price-block #priceCalc img:nth-child(2){
+	top:505px;	
+}
+.container .price-block #priceCalc img:nth-child(3){
+	top:1072px;
+}
+.container .price-block #priceCalc img:nth-child(4){
+	top:1301px;
+}
+.container .price-block #priceCalc img:nth-child(5){
+	top:1580px;
+}
+.container .price-block #priceCalc img:nth-child(6){
+	top:1967px;
+}
+.container .price-block #priceCalc img:nth-child(7){
+	top:2371px;
+}
+.container .price-block #priceCalc .unit-service h2{
+	text-align: left;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+	margin: 0 0 24px 0 ;
+}
+.container .price-block #priceCalc .unit-service .form-check{
+	font-size: 15px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	grid-template-columns: 50px minmax(50%, auto) 140px;
+	margin: 14px 0;
+	grid-template-areas: "input label spanVal";
+/* 	justify-content: space-between; */
+	    justify-items: start;
+}
+.container .price-block #priceCalc .unit-service .form-check:last-child{
+	margin-bottom: 0;
+}
+.container .price-block #priceCalc .unit-service .form-check input{
+	grid-area:input;
+	min-width: 20px;
+	max-width: 20px;
+	height: 20px;
+	align-self: center;
+	justify-self: center;
+	background-color: rgba(52, 169, 187, 0.22);
+	border-radius: 5px;
+	color:rgba(52, 169, 187, 0.6);
+		-webkit-appearance: none;
+	-moz-appearance: none;
+	border:none;
+	
+}
+.container .price-block #priceCalc .unit-service .form-check input:disabled::after{
+	content:'*';
+	/* justify-content: center; */
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	color: #000000;
+	position: relative;
+	margin-left: 22px;
+	top:-18px;
+
+}
+.form-check-input:disabled,
+.form-check-input:disabled~.form-check-label, 
+.form-check-input[disabled]~.form-check-label{
+	opacity: 1 !important;
+}
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label{
+	color: #000000;
+}
+.container .price-block #priceCalc .unit-service .form-check input:checked{
+	background-image: url('../../img/checked.png');
+	background-size: 20px 20px;
+}
+.container .price-block #priceCalc .unit-service .form-check label{
+	grid-area:label;
+	text-align: left;
+	font-size: 15px;
+	line-height: 22px;
+	padding-right: 21px;
+	width:428px;
+	text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+    padding-right: 21px;
+    width: 428px;
+    margin-left: 50px
+}
+.container .price-block #priceCalc .unit-service .form-check span{
+	grid-area:spanVal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	padding: 0 auto auto 0;
+	display: inline;
+	text-align: left;
+	color: #ADADAD;
+
+}
+.container .price-block #priceCalc .unit-service .form-check input:checked~span {
+	display: inline;
+	color: #000000;
+}
+
+.container .price-block #priceCalc .unit-service .form-check span::after {
+	content: ' руб.'
+}
+
+.categoryes{
+  display:flex;
+  gap:10px
+}
+.categoryBlock label input{
+  display:none
+}
+
+.categoryes button{
+  border:none;
+  cursor: pointer;
+  background: rgba(52, 169, 187, 0.3);
+  border-radius: 10px;
+  padding:9px 20px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #FFFFFF;
+	user-select: none;
+}
+.categoryes button.active{
+  background: rgba(48, 155, 172, 0.6);
+}
+
+
+
+@media (max-width: 768px){
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  max-width: 100%;
+}
+}
+
+@media (max-width:1007px) {
+	.container .price-block #priceCalc img:nth-child(1){
+		display: none;
+	}
+}
+
+@media (min-width: 1200px){
+	.container, .container-lg,     .container-md, .container-sm, .container-xl {
+		width: 1060px;
+	}
+}
+@media(max-width:1060px){
+	.row.hospital.mto .str1 p {
+		margin: auto auto auto 0;
+	}
+	.container .price-block #priceCalc .unit-service {
+		width: 100%;
+		padding: 26px 5px;
+	}
+	.container .price-block #priceCalc{
+		width:100vw;
+	}
+	.container .price-block #priceCalc .unit-service{
+		width:100vw;
+	}
+	.container .price-block #priceCalc .unit-service h2{
+		max-width:100vw;
+	}
+	.container .price-block #priceCalc .unit-service .form-check label{
+		margin-left:25px;
+	}
+}
+
+

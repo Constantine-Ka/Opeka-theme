@@ -1,0 +1,46 @@
+section#titlePage{
+  margin:30px 0 0px 0px;
+}
+.row .greenPoint{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding:0 0 0 91px;
+  margin:33px 0 12px 0px;
+}
+.row .greenPoint::before{
+  position: absolute;
+  content:'';
+  width:20px;
+  height:20px;
+  margin-left:-47px;
+  background-color:rgba(52, 169, 187, 0.6);
+  border-radius:50%
+}
+.row.mto,
+.row.mto img{
+  width:100%;
+  margin-bottom:7px;
+}
+.row.string{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:20px 28px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 85px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin:30px 0;
+}
+.row.string h4{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  width:263px;
+}

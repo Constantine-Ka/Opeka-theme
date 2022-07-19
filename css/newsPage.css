@@ -1,0 +1,110 @@
+section .container .row.singleNews{
+  width:100%;
+  position:ralative;
+  display:flex;
+  flex-direction:column
+}
+section .container .row.singleNews p{
+  font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 23px;
+text-align: justify;
+color: #000000;
+  margin:0;
+  padding:0;
+}
+.comment-navigation .nav-links, 
+section .container .row.singleNews.posts-navigation .nav-links, .post-navigation .nav-links{
+  display:flex;
+  width:100%;
+  height:auto;
+  justify-content: space-evenly
+}
+section .container .row.singleNews .posts-navigation .nav-links, .post-navigation .nav-links a,
+input[type="submit"]
+{
+  height:auto;
+    border: none;
+    cursor: pointer;
+    background: rgba(48, 155, 172, 0.6);     border-radius: 10px;
+    padding: 9px 20px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    user-select: none;
+  margin:auto;
+}
+section .container .row.singleNews .posted-on{
+  margin:20px;
+}
+#newsPageTitle .container{
+  display:flex;
+  margin-top:30px;
+  
+}
+
+#newsPageTitle .container .row {
+   display:flex;
+  margin-bottom:36px;
+  flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#newsPageTitle .container .row .main{
+  width: 430px;
+  height: 430px;
+  background: #FFFFFF;
+  box-shadow: 6.25455px 6.25455px 132.909px rgba(0, 0, 0, 0.25);
+  padding:25px 31px 43px 31px;
+  margin-right:20px
+  
+}
+#newsPageTitle .container .row .main .post-thumbnail{
+  width: 367.45px;
+  height: 273.64px;
+  overflow:hidden;
+}
+#newsPageTitle .container .row .main .post-thumbnail img{
+  width:100%;
+}
+#newsPageTitle .container .row .main h2.entry-title{
+  margin:18.76px 0 0 0;
+  font-weight: 700;
+  font-size: 21.8909px;
+  line-height: 32px;
+/* identical to box height */
+
+
+color: #000000;
+}
+#newsPageTitle .container .row .main p{
+  margin:0;
+  font-weight: 300;
+  font-size: 21.8909px;
+  line-height: 32px;
+  /* identical to box height */
+  color: #000000;
+}
+#newsPageTitle .container .row .addition{
+  margin:22px;
+  width:300px;
+  background: #FFFFFF;
+  box-shadow: 2.98053px 2.98053px 63.3362px rgba(0, 0, 0, 0.25);
+  padding:15px;
+  
+}
+
+#newsPageTitle .container .row .addition:nth-child(even){
+  transform: rotate(-10.87deg);
+}
+#newsPageTitle .container .row .addition:nth-child(odd){
+  transform: rotate(23.48deg);
+
+}
+
+.post-navigation .nav-next,.post-navigation .nav-previous{
+	white-space:nowrap;
+}

@@ -1,0 +1,44 @@
+#footer{
+
+    display: flex;
+    width: 100%;
+    background: rgba(52, 169, 187, 0.6);
+    padding: 22px 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#footer .socialBlock{
+	text-align:center;
+	margin-right:45px;
+} 
+
+#footer .socialBlock a{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	padding:14px 10px;
+	display:block;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:45px;
+	height:45px;
+	border-radius:50%;
+	color:rgba(52, 169, 187, 1); 
+	text-decoration:none;
+}
+
+#footer h5{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+@media(max-width:1416px){
+	#footer .socialBlock{
+		margin-right:0;
+	}
+}

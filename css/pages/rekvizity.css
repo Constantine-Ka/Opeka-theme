@@ -1,0 +1,126 @@
+.container{
+  display:flex;
+  flex-direction:column;
+  align-content: space-between
+}
+.container .row.alert{
+  align-content: flex-start;
+  margin:0 auto 0 0 ;
+  height:25px;
+}
+.container .row#bank{
+  height:auto;
+}
+
+.container .row h5.greenPoint{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  position:relative;
+    margin:0 0 0 45px;
+}
+.greenPoint::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-left: -47px;
+    background-color: rgba(52, 169, 187, 0.6);
+    border-radius: 50%;
+    top: calc((100% - 17px)/2);
+}
+#bank{
+  display:flex;
+  flex-direction:column;
+}
+#bank input{    
+  position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+#bank #button{
+  display:flex;
+  gap:10px;
+  justify-content: space-between;
+  margin:25px 0 0 0;
+  flex-wrap:wrap;
+}
+#bank #button label{
+  width:250px;
+  height:100px;
+  display:flex;
+  
+}
+#bank #button label img{
+  width:auto;
+  height:auto;
+  margin:auto; 
+}
+#bank #button label:hover,
+#bank #button input:checked+label{
+  background: #FFFFFF;
+box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+}
+#bank .page{
+  max-width:740px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  margin:75px auto 0 auto;
+  padding:36px 120px;
+	width:100vw;
+}
+#bank .page h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  background:none;
+  padding:0;
+  box-shadow: none;
+  color: #000000;
+  margin:7.5px auto;
+  border-radius:0;
+}
+#bank .page h3.org{
+  border-bottom:1px solid #34A9BB;
+  padding-bottom:8px;
+  margin:0 auto;
+}
+#bank .page .rekvizit{
+  display:flex;
+      flex-direction: row;
+  flex-wrap:wrap;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: space-between;;
+  margin:46px 0 0 0;
+}
+#bank .page .rekvizit p{
+  font-style: normal;
+  width:300px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  margin:5px 0;
+  text-align:left;
+  border-bottom:none
+}
+#bank .page .rekvizit p:last-child{
+  border-bottom:none;
+}
+#bank .page .rekvizit p:nth-child(even){
+    text-align:right;
+    max-width:200px;
+}
+@media(max-width:1416px){
+	#bank .page{
+		padding:5px;
+	}
+	#bank .page .rekvizit p:nth-child(even){
+		text-align: left;
+	}
+}

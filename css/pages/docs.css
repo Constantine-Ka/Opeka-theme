@@ -1,0 +1,55 @@
+#btnBlock{
+  display:flex;
+  max-width:1060px;
+  flex-wrap:wrap;
+  gap:25px;
+  justify-content: flex-start;
+
+
+}
+#btnBlock input{    
+  position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+#btnBlock label{
+  background: #FFFFFF;  
+  box-shadow: 5.1072px 5.1072px 63.84px rgba(0, 0, 0, 0.25);
+  border-radius: 19.152px;
+  width: 245.61px;
+  height: 244.68px;
+
+  display:flex;
+  text-align:center;
+}
+#btnBlock label h3{
+  margin:auto;
+  padding:15px;
+  background:none;
+  box-shadow:none;
+  font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+/* or 112% */
+
+text-align: center;
+
+color: #000000;
+}
+#btnBlock label:hover,
+#btnBlock input:checked +label{
+background: rgba(52, 169, 187, 0.22);}
+
+.row{
+  display:flex;
+  margin:0 auto 0 auto;;
+}
+.row img{
+  width:440px;
+  margin:auto;
+}
+.row embed{
+  width:1060px;
+  height:800px;
+  max-width: 1060px;
+}

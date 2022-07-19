@@ -1,0 +1,96 @@
+.feedback{
+	position:fixed;
+	right:-250px; /*//Изменить в процессе верстки*/
+	top:50%;
+	display:flex
+}
+.feedback input#visible{
+	display:none;
+}
+.feedback input#visible:checked{
+	right:0;
+}
+.feedback label.visible{
+	background: rgba(52, 169, 187, 0.8);
+	border-radius: 10px 0px 0px 10px;
+	width: 60px;
+	height: 60px;
+	display:flex;
+	    align-items: center;
+    justify-content: center;
+}
+.feedback label.visible img{
+/* 	padding:8px; */
+	width: 43px;
+	height: 43px;
+}
+.feedback .formBlock{
+	background: rgba(52, 169, 187, 0.8); 
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+	max-width:250px;
+}
+.feedback .formBlock form{
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feedback .formBlock form p{margin:12px auto 7px auto}
+.feedback .formBlock form h7{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	/* identical to box height, or 112% */
+	text-align: center;
+	color: #FFFFFF;
+	
+}
+.feedback .whiteline {
+	position:relative;
+	width:120px;
+	height:1px;
+	background:#fff;
+	margin:auto;
+}
+.feedback .formBlock form p span input{
+	width:210px;
+	height:20px;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	color: #309BAC;
+	margin:5px auto; 
+	border:none;
+}
+.feedback .formBlock form p:nth-child(4){
+	margin:20px
+}
+.feedback .formBlock form p:nth-child(5){
+	display:flex;
+	flex-direction:row-reverse;
+	margin:0 0 20px auto;
+}
+.feedback .formBlock form input[type='submit']{
+	width: 130px;
+	height: 30px;
+	margin-right:10px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	background: #34A9BB;
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	border:none;
+	/* or 129% */
+
+	text-align: center;
+
+	color: #FFFFFF;
+}
